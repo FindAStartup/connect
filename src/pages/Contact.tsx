@@ -1,0 +1,18 @@
+import React from 'react';
+import Header from '../components/Header';
+import ContactSection from '../components/ContactSection';
+import Footer from '../components/Footer';
+
+const Contact: React.FC = () => {
+  return (
+    <div className="flex flex-col min-h-screen">
+      <Header />
+      <main className="flex-1">
+        <ContactSection />
+      </main>
+      <Footer />
+    </div>
+  );
+};
+
+export default Contact;
