@@ -12,8 +12,8 @@ export default {
         background: "#102216",     // Deep Forest Green (Main BG)
         surface: "#1c2e22",        // Slightly lighter green for Cards/Header
         border: "#23482f",         // Subtle green border
-        "surface-dark": "#1c2e22", // Adjusted to match the card background
-        "card-dark": "#1c3626",    // Slightly lighter for icon backgrounds
+        "surface-dark": "#193322", // Background for cards/sections
+        "surface-border": "#23482f",   // Slightly lighter for icon backgrounds
         "border-dark": "#326744",
         "text-muted": "#92c9a4",
       },

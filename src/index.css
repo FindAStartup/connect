@@ -4,7 +4,6 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Force the entire app to be Dark Green */
 body {
   background-color: #102216; /* matches 'background' in config */
   color: #ffffff;
