@@ -10,6 +10,7 @@ export default {
       colors: {
         primary: "#13ec5b",        // Neon Green
         background: "#102216",     // Deep Forest Green (Main BG)
+        "background-alt": "#0d1c12",
         surface: "#1c2e22",        // Slightly lighter green for Cards/Header
         border: "#23482f",         // Subtle green border
         "surface-dark": "#193322", // Background for cards/sections
