@@ -17,12 +17,12 @@ const AboutHero: React.FC = () => {
             We are redefining how the global college community connects. Built on trust, driven by ownership, and powered by decentralized identity.
           </h2>
           <div className="flex flex-wrap gap-4 pt-4">
-            <Button>
+            <Button to="/contact">
               Join the Network
             </Button>
-            <Button variant="outline" className="gap-2">
+            <Button variant="outline" className="gap-2" to="/howitworks">
               <FileText size={18} />
-              Read Whitepaper
+              Explore Features
             </Button>
           </div>
         </div>

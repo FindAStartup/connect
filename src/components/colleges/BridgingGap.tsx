@@ -19,7 +19,7 @@ const BridgingGap: React.FC = () => {
               />
               
               {/* Floating Card Mockup */}
-              <div className="absolute -bottom-6 -right-6 bg-background border border-border-dark p-6 rounded-2xl shadow-xl max-w-[280px] hidden md:block">
+              {/*<div className="absolute -bottom-6 -right-6 bg-background border border-border-dark p-6 rounded-2xl shadow-xl max-w-[280px] hidden md:block">
                 <div className="flex items-center gap-3 mb-3">
                   <div className="size-10 rounded-full bg-primary/20 flex items-center justify-center text-primary">
                     <GraduationCap size={20} />
@@ -30,7 +30,7 @@ const BridgingGap: React.FC = () => {
                   </div>
                 </div>
                 <p className="text-xs text-gray-400">Credential ID: #8829-AF22-9901</p>
-              </div>
+              </div>*/}
             </div>
           </div>
 

@@ -18,8 +18,8 @@ const VALUES = [
     icon: <Rocket size={28} />
   },
   {
-    title: "Multi-College Nav",
-    desc: "Seamlessly browse and connect across different universities without walled gardens.",
+    title: "Multi-College Navigation",
+    desc: "Every institution gets its own dashboard, identity, and dedicated professional space.",
     icon: <Globe size={28} />
   }
 ];

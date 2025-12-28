@@ -38,11 +38,11 @@ const HeroSection: React.FC = () => {
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start mt-2">
-              <Button to="/register">Get Early Access</Button>
-              <Button variant="outline" to="/features">Explore Features</Button>
+              <Button to="/contact">Get Early Access</Button>
+              <Button variant="outline" to="/howitworks">Explore Features</Button>
             </div>
 
-            <div className="pt-6 border-t border-white/10 mt-4">
+            {/*<div className="pt-6 border-t border-white/10 mt-4">
               <p className="text-sm text-[#92c9a4] font-medium mb-4">
                 Trusted by students from top universities worldwide
               </p>
@@ -52,7 +52,7 @@ const HeroSection: React.FC = () => {
                 <div className="flex items-center gap-2"><GraduationCap size={20} /><span className="font-bold text-sm">Harvard</span></div>
                 <div className="flex items-center gap-2"><BookOpen size={20} /><span className="font-bold text-sm">Oxford</span></div>
               </div>
-            </div>
+            </div>*/}
           </div>
 
           {/* --- RIGHT SIDE --- */}

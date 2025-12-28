@@ -26,12 +26,12 @@ const CollegesHero: React.FC = () => {
           </h2>
           
           <div className="flex flex-col sm:flex-row gap-4 pt-4">
-            <Button>
+            <Button to="/contact">
               Partner With Us
             </Button>
-            <Button variant="outline" className="gap-2">
+            <Button variant="outline" className="gap-2" to="/howitworks">
               <Play size={16} />
-              View Case Studies
+              How it Works
             </Button>
           </div>
         </div>
