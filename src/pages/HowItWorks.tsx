@@ -1,6 +1,6 @@
 import React from 'react';
 import Header from '../components/Header';
-import HowItWorksSection from '../components/HowItWorksSection';
+import HowItWorksSection from '../components/HowItWorks/HowItWorksSection';
 import Footer from '../components/Footer';
 
 const HowItWorks: React.FC = () => {

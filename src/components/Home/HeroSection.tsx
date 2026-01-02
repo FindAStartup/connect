@@ -1,7 +1,7 @@
 import React from 'react';
 import { BadgeCheck, Users, School, Landmark, GraduationCap, BookOpen } from 'lucide-react';
-import Button from './ui/Button';
-import heroImage from '../assets/hero_image.png'; // Make sure this image fits the new light theme!
+import Button from '../ui/Button';
+import heroImage from '../../assets/hero_image.png';
 
 const HeroSection: React.FC = () => {
   return (
@@ -18,7 +18,7 @@ const HeroSection: React.FC = () => {
           <div className="flex flex-col gap-6 md:gap-8 text-center lg:text-left z-10">
             
             {/* Badge */}
-            <div className="inline-flex items-center justify-center lg:justify-start">
+            {/*<div className="inline-flex items-center justify-center lg:justify-start">
               <span className="inline-flex items-center gap-2 rounded-full bg-white border border-brand-green/30 px-4 py-1.5 text-xs font-bold uppercase tracking-wider text-brand-dark shadow-sm">
                 <span className="relative flex h-2.5 w-2.5">
                   <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-brand-green opacity-75"></span>
@@ -26,7 +26,7 @@ const HeroSection: React.FC = () => {
                 </span>
                 <span className="text-brand-dark/80">Web3 Professional Network</span>
               </span>
-            </div>
+            </div>*/}
 
             {/* Headline with Gradient */}
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-black leading-[1.1] tracking-tight text-brand-dark">
@@ -39,12 +39,12 @@ const HeroSection: React.FC = () => {
 
             {/* Buttons */}
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start mt-2">
-              <Button to="/contact">Get Early Access</Button>
+              <Button to="/contact">Contact Us</Button>
               <Button variant="outline" to="/features">Explore Features</Button>
             </div>
 
             {/* Trust Indicators */}
-            <div className="pt-8 border-t border-brand-blue/10 mt-4">
+            {/*<div className="pt-8 border-t border-brand-blue/10 mt-4">
               <p className="text-sm text-brand-dark/60 font-semibold mb-5">
                 Trusted by students from top universities worldwide
               </p>
@@ -54,7 +54,7 @@ const HeroSection: React.FC = () => {
                 <div className="flex items-center gap-2"><GraduationCap size={28} /><span className="font-bold text-sm">Harvard</span></div>
                 <div className="flex items-center gap-2"><BookOpen size={28} /><span className="font-bold text-sm">Oxford</span></div>
               </div>
-            </div>
+            </div>*/}
           </div>
 
           {/* --- RIGHT SIDE: VISUALS --- */}
@@ -73,7 +73,7 @@ const HeroSection: React.FC = () => {
               <div className="absolute bottom-8 left-8 right-8 z-20 flex flex-col gap-4">
                 
                 {/* Security Card */}
-                <div className="bg-white/95 backdrop-blur-md p-5 rounded-2xl shadow-lg flex items-center gap-5 border border-white/50 w-fit hover:-translate-y-1 transition-transform">
+                {/*<div className="bg-white/95 backdrop-blur-md p-5 rounded-2xl shadow-lg flex items-center gap-5 border border-white/50 w-fit hover:-translate-y-1 transition-transform">
                   <div className="size-12 rounded-xl bg-brand-green/20 flex items-center justify-center text-green-700">
                     <BadgeCheck size={24} />
                   </div>
@@ -81,10 +81,10 @@ const HeroSection: React.FC = () => {
                     <p className="text-xs font-bold text-brand-blue uppercase tracking-wider mb-0.5">Security</p>
                     <p className="text-base font-bold text-brand-dark">100% Data Ownership</p>
                   </div>
-                </div>
+                </div>*/}
 
                 {/* Community Card */}
-                <div className="bg-white/95 backdrop-blur-md p-5 rounded-2xl shadow-lg flex items-center gap-5 w-fit ml-auto border border-white/50 hover:-translate-y-1 transition-transform delay-75">
+                {/*<div className="bg-white/95 backdrop-blur-md p-5 rounded-2xl shadow-lg flex items-center gap-5 w-fit ml-auto border border-white/50 hover:-translate-y-1 transition-transform delay-75">
                   <div className="size-12 rounded-xl bg-brand-blue/20 flex items-center justify-center text-brand-blue">
                     <Users size={24} />
                   </div>
@@ -92,7 +92,7 @@ const HeroSection: React.FC = () => {
                     <p className="text-xs font-bold text-brand-green uppercase tracking-wider mb-0.5">Community</p>
                     <p className="text-base font-bold text-brand-dark">Global Alumni Network</p>
                   </div>
-                </div>
+                </div>*/}
 
               </div>
             </div>

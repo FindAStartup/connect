@@ -41,9 +41,8 @@ const Header: React.FC = () => {
                 </Link>
               ))}
             </nav>
-            {/* Uses new 'dark' variant */}
             <Button variant="dark" to="/contact">
-              Connect Wallet
+              Contact Us
             </Button>
           </div>
 
