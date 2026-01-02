@@ -11,7 +11,7 @@ const AboutHero: React.FC = () => {
         {/* Left Text */}
         <div className="flex-1 flex flex-col gap-6 text-left">
           <h1 className="text-brand-dark text-4xl font-black leading-tight tracking-tight md:text-6xl">
-            The Future of <span className="text-brand-green">Academic Networking</span> is Here
+            The Future of <span className="text-brand-blue">Academic Networking</span> is Here
           </h1>
           <h2 className="text-brand-dark/70 text-lg md:text-xl font-medium leading-relaxed max-w-[600px]">
             We are redefining how the global college community connects. Built on trust, driven by ownership, and powered by decentralized identity.
@@ -42,12 +42,12 @@ const AboutHero: React.FC = () => {
                 <div className="absolute inset-0 bg-brand-dark/10 mix-blend-overlay"></div>
                 
                 {/* Center Hub Icon Overlay */}
-                <div className="absolute inset-0 flex items-center justify-center">
+                {/*<div className="absolute inset-0 flex items-center justify-center">
                     <div className="bg-white/90 backdrop-blur-sm p-6 rounded-2xl shadow-lg border border-white/50 text-center flex flex-col items-center">
                         <Network className="text-brand-green size-16 mb-2" strokeWidth={1.5} />
                         <p className="text-brand-dark font-bold font-mono text-xs tracking-widest uppercase">Decentralized Protocol</p>
                     </div>
-                </div>
+                </div>*/}
             </div>
           </div>
         </div>
