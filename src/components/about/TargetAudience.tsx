@@ -34,31 +34,31 @@ const TargetAudience: React.FC = () => {
       <div className="max-w-7xl w-full flex flex-col gap-12">
         
         <div className="text-center">
-          <h2 className="text-white text-3xl md:text-4xl font-black leading-tight mb-4">Who is This Platform For?</h2>
-          <p className="text-gray-400">A unified ecosystem serving every stakeholder in the academic journey.</p>
+          <h2 className="text-brand-dark text-3xl md:text-4xl font-black leading-tight mb-4">Who is This Platform For?</h2>
+          <p className="text-brand-dark/60 text-lg">A unified ecosystem serving every stakeholder in the academic journey.</p>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           {SEGMENTS.map((seg, idx) => (
-            <div key={idx} className="flex items-start gap-6 p-6 md:p-8 rounded-3xl bg-surface-dark border border-surface-border hover:border-primary/30 transition-colors">
+            <div key={idx} className="flex items-start gap-6 p-6 md:p-8 rounded-[2rem] bg-white border border-brand-blue/10 hover:shadow-soft hover:-translate-y-1 transition-all duration-300">
               
-              <div className="hidden sm:flex shrink-0 size-16 rounded-2xl bg-[#2a5538] items-center justify-center text-white">
+              <div className="hidden sm:flex shrink-0 size-16 rounded-2xl bg-brand-bg items-center justify-center text-brand-green">
                 {seg.icon}
               </div>
 
               <div className="flex flex-col gap-2">
                 <div className="flex items-center gap-3 sm:hidden mb-2">
-                  <div className="text-primary">{seg.icon}</div>
-                  <h3 className="text-white text-xl font-bold">{seg.title}</h3>
+                  <div className="text-brand-green">{seg.icon}</div>
+                  <h3 className="text-brand-dark text-xl font-bold">{seg.title}</h3>
                 </div>
                 
-                <h3 className="text-white text-xl font-bold hidden sm:block">{seg.title}</h3>
-                <p className="text-gray-300 leading-relaxed">{seg.desc}</p>
+                <h3 className="text-brand-dark text-xl font-bold hidden sm:block">{seg.title}</h3>
+                <p className="text-brand-dark/70 leading-relaxed font-medium">{seg.desc}</p>
                 
-                <ul className="mt-2 space-y-2">
+                <ul className="mt-4 space-y-2">
                   {seg.checks.map((check, cIdx) => (
-                    <li key={cIdx} className="flex items-center gap-2 text-sm text-primary/80">
-                      <CheckCircle2 size={16} />
+                    <li key={cIdx} className="flex items-center gap-2 text-sm text-brand-blue font-bold">
+                      <CheckCircle2 size={18} />
                       {check}
                     </li>
                   ))}

@@ -5,8 +5,8 @@
 @tailwind utilities;
 
 body {
-  background-color: #102216; /* matches 'background' in config */
-  color: #ffffff;
+  background-color: #EFFFFB; /* brand-bg */
+  color: #272727; /* brand-dark */
   font-family: 'Manrope', sans-serif;
 }
 

@@ -1,5 +1,5 @@
 import React from 'react';
-import { ArrowRight, FileText, Network } from 'lucide-react';
+import { FileText, Network } from 'lucide-react';
 import Button from '../ui/Button';
 import aboutHeroImg from '../../assets/AboutImage.jpeg'; 
 
@@ -10,10 +10,10 @@ const AboutHero: React.FC = () => {
         
         {/* Left Text */}
         <div className="flex-1 flex flex-col gap-6 text-left">
-          <h1 className="text-white text-4xl font-black leading-tight tracking-tight md:text-6xl">
-            The Future of <span className="text-primary">Academic Networking</span> is Here
+          <h1 className="text-brand-dark text-4xl font-black leading-tight tracking-tight md:text-6xl">
+            The Future of <span className="text-brand-green">Academic Networking</span> is Here
           </h1>
-          <h2 className="text-gray-300 text-lg md:text-xl font-normal leading-relaxed max-w-[600px]">
+          <h2 className="text-brand-dark/70 text-lg md:text-xl font-medium leading-relaxed max-w-[600px]">
             We are redefining how the global college community connects. Built on trust, driven by ownership, and powered by decentralized identity.
           </h2>
           <div className="flex flex-wrap gap-4 pt-4">
@@ -29,20 +29,25 @@ const AboutHero: React.FC = () => {
 
         {/* Right Visual */}
         <div className="flex-1 w-full flex justify-center md:justify-end">
-          <div className="w-full max-w-[500px] aspect-square rounded-full bg-surface-dark relative overflow-hidden flex items-center justify-center border border-surface-border shadow-[0_0_100px_-20px_rgba(19,236,91,0.2)]">
-            {/* Overlay Gradient */}
-            <div className="absolute inset-0 bg-primary/5 opacity-20"></div>
-            {/* Image */}
-            <img 
-              src={aboutHeroImg} 
-              alt="Decentralized Network" 
-              className="absolute inset-0 w-full h-full object-cover opacity-60 mix-blend-overlay"
-            />
-            
-            {/* Center Hub Icon */}
-            <div className="relative z-10 p-8 text-center flex flex-col items-center">
-              <Network className="text-primary size-24 mb-4" strokeWidth={1} />
-              <p className="text-primary/80 font-mono text-sm tracking-widest uppercase">Decentralized Protocol</p>
+          <div className="w-full max-w-[500px] aspect-square rounded-[2.5rem] bg-white relative overflow-hidden flex items-center justify-center border border-brand-blue/10 shadow-soft p-2">
+            <div className="relative w-full h-full rounded-[2rem] overflow-hidden">
+                {/* Image */}
+                <img 
+                  src={aboutHeroImg} 
+                  alt="Decentralized Network" 
+                  className="absolute inset-0 w-full h-full object-cover"
+                />
+                
+                {/* Overlay Gradient */}
+                <div className="absolute inset-0 bg-brand-dark/10 mix-blend-overlay"></div>
+                
+                {/* Center Hub Icon Overlay */}
+                <div className="absolute inset-0 flex items-center justify-center">
+                    <div className="bg-white/90 backdrop-blur-sm p-6 rounded-2xl shadow-lg border border-white/50 text-center flex flex-col items-center">
+                        <Network className="text-brand-green size-16 mb-2" strokeWidth={1.5} />
+                        <p className="text-brand-dark font-bold font-mono text-xs tracking-widest uppercase">Decentralized Protocol</p>
+                    </div>
+                </div>
             </div>
           </div>
         </div>

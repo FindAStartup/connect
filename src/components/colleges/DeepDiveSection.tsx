@@ -1,40 +1,47 @@
 import React from 'react';
 import { Check } from 'lucide-react';
 import Button from '../ui/Button';
-// Placeholder for the chart image
 import dashboardImg from '../../assets/ForColleges2.png'; 
 
 const DeepDiveSection: React.FC = () => {
   return (
-    <section className="w-full flex justify-center py-10 px-4 md:px-10">
+    <section className="w-full flex justify-center py-20 px-4 md:px-10 bg-white">
       <div className="max-w-7xl w-full">
-        <div className="flex flex-col lg:flex-row gap-12 items-center rounded-3xl bg-surface-dark p-8 md:p-12 border border-surface-border">
+        <div className="flex flex-col lg:flex-row gap-12 items-center rounded-[2.5rem] bg-white p-8 md:p-12 border border-gray-100 shadow-soft">
           
           <div className="flex-1 flex flex-col gap-6">
-            <h2 className="text-white text-3xl md:text-4xl font-bold leading-tight">
-              Deep Analytics for <br/><span class="text-primary">Data-Driven Decisions</span>
+            <h2 className="text-brand-dark text-3xl md:text-4xl font-black leading-tight">
+              Deep Analytics for <br/><span class="text-brand-green">Data-Driven Decisions</span>
             </h2>
-            <p className="text-gray-400 text-lg">
+            <p className="text-brand-dark/70 text-lg font-medium">
               Stop guessing about student success. Our comprehensive dashboard gives administrators a granular view of network health, engagement trends, and employment outcomes.
             </p>
             
             <ul className="flex flex-col gap-4 mt-2">
               {["Track career placement rates in real-time.", "Identify at-risk students through engagement drop-offs.", "Measure alumni mentorship effectiveness."].map((item, i) => (
                 <li key={i} className="flex items-start gap-3">
-                  <Check className="text-primary mt-1 shrink-0" size={20} />
-                  <p className="text-white">{item}</p>
+                  <div className="mt-1 p-1 bg-brand-green/10 rounded-full">
+                    <Check className="text-brand-green shrink-0" size={16} />
+                  </div>
+                  <p className="text-brand-dark font-medium">{item}</p>
                 </li>
               ))}
             </ul>
             
-            <Button variant="outline" className="self-start mt-4 border-primary text-primary hover:bg-primary hover:text-background">
+            <Button variant="outline" className="self-start mt-4 border-brand-green text-brand-green hover:bg-brand-green hover:text-white">
               See Sample Report
             </Button>
           </div>
 
           <div className="flex-1 w-full">
-            <div className="w-full bg-background rounded-xl border border-border-dark p-2 shadow-2xl">
-              <img src={dashboardImg} alt="Analytics Dashboard" className="w-full rounded-lg" />
+            <div className="w-full bg-[#F5F7FA] rounded-2xl border border-gray-200 p-3 shadow-inner">
+              <img 
+                src={dashboardImg} 
+                alt="Analytics Dashboard" 
+                className="w-full rounded-xl shadow-sm" 
+                // Optional: Use filter if your image is very dark
+                // style={{ filter: 'invert(0.9) hue-rotate(180deg) saturate(1.5) contrast(0.9)' }} 
+              />
             </div>
           </div>
 

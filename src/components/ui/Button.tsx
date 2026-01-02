@@ -3,7 +3,7 @@ import { useNavigate } from 'react-router-dom';
 
 interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
   children: React.ReactNode;
-  variant?: 'primary' | 'outline' | 'ghost';
+  variant?: 'primary' | 'outline' | 'ghost' | 'dark'; // Added 'dark' variant for header button
   className?: string;
   to?: string;
 }
@@ -18,17 +18,20 @@ const Button: React.FC<ButtonProps> = ({
 }) => {
   const navigate = useNavigate();
 
-  const baseStyles = "flex items-center justify-center rounded-full h-12 px-8 text-base font-bold transition-all duration-300 cursor-pointer";
+  const baseStyles = "flex items-center justify-center rounded-full h-14 px-8 text-base font-bold transition-all duration-300 cursor-pointer active:scale-95";
   
   const variants = {
-    // Primary: Neon Green background, Dark Text
-    primary: "bg-primary text-background hover:scale-105 active:scale-95 shadow-[0_0_20px_rgba(19,236,91,0.3)] hover:bg-opacity-90",
+    // Green background, Dark text, Glow effect
+    primary: "bg-brand-green text-brand-dark hover:scale-105 shadow-glow hover:shadow-lg",
     
-    // Outline: White/Green border, White Text
-    outline: "border border-white/20 hover:bg-white/10 text-white hover:border-primary/50",
+    // White background, Blue border, Dark text
+    outline: "border-2 border-brand-blue/20 bg-white hover:border-brand-blue hover:bg-brand-blue/5 text-brand-dark",
     
-    // Ghost: Just text
-    ghost: "text-sm font-medium hover:text-primary transition-colors bg-transparent h-auto px-4 text-white"
+    // Dark background, White text (For 'Connect Wallet' in header)
+    dark: "bg-brand-dark text-white hover:bg-brand-blue shadow-lg shadow-brand-dark/10 h-10 px-6 text-sm",
+
+    // Ghost links
+    ghost: "text-brand-dark/70 hover:text-brand-blue bg-transparent h-auto px-4"
   };
 
   const handleClick = (e: React.MouseEvent<HTMLButtonElement>) => {
