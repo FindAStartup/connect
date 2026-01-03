@@ -1,7 +1,7 @@
 import React from 'react';
 import { BadgeCheck, LayoutDashboard, Users, Compass, ShieldCheck, ChevronRight } from 'lucide-react';
-import Button from './ui/Button';
-import heroImage from '../assets/hero_image.png'; 
+import Button from '../ui/Button';
+import heroImage from '../../assets/hero_image.png'; 
 
 const STEPS = [
   {

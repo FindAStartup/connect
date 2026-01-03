@@ -5,9 +5,9 @@ import dashboardImg from '../../assets/ForColleges2.png';
 
 const DeepDiveSection: React.FC = () => {
   return (
-    <section className="w-full flex justify-center py-20 px-4 md:px-10 bg-white">
+    <section className="w-full flex justify-center py-20 px-4 md:px-10 bg-brand-light">
       <div className="max-w-7xl w-full">
-        <div className="flex flex-col lg:flex-row gap-12 items-center rounded-[2.5rem] bg-white p-8 md:p-12 border border-gray-100 shadow-soft">
+        <div className="flex flex-col lg:flex-row gap-12 items-center rounded-[2.5rem] bg-brand-light p-8 md:p-12 border border-brand-blue/10 shadow-soft">
           
           <div className="flex-1 flex flex-col gap-6">
             <h2 className="text-brand-dark text-3xl md:text-4xl font-black leading-tight">
@@ -28,7 +28,7 @@ const DeepDiveSection: React.FC = () => {
               ))}
             </ul>
             
-            <Button variant="outline" className="self-start mt-4 border-brand-green text-brand-green hover:bg-brand-green hover:text-white">
+            <Button variant="outline" className="self-start mt-4 border-brand-green text-brand-green hover:bg-brand-green hover:text-brand-light">
               See Sample Report
             </Button>
           </div>
@@ -39,8 +39,6 @@ const DeepDiveSection: React.FC = () => {
                 src={dashboardImg} 
                 alt="Analytics Dashboard" 
                 className="w-full rounded-xl shadow-sm" 
-                // Optional: Use filter if your image is very dark
-                // style={{ filter: 'invert(0.9) hue-rotate(180deg) saturate(1.5) contrast(0.9)' }} 
               />
             </div>
           </div>

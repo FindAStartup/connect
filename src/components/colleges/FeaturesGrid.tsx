@@ -21,7 +21,7 @@ const FeaturesGrid: React.FC = () => {
         
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {FEATURES.map((feat, idx) => (
-            <div key={idx} className="group flex flex-col gap-4 rounded-2xl border border-white bg-white p-8 hover:shadow-xl hover:-translate-y-1 transition-all duration-300 shadow-sm">
+            <div key={idx} className="group flex flex-col gap-4 rounded-2xl border border-brand-light bg-brand-light p-8 hover:shadow-xl hover:-translate-y-1 transition-all duration-300 shadow-sm">
               <div className={`size-12 rounded-full ${feat.bg} flex items-center justify-center ${feat.color}`}>
                 {feat.icon}
               </div>
